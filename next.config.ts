@@ -1,9 +1,22 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Domain subpath deployment
+  basePath: "/living-ecommerce",
+
+  // Image configuration
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
+    ],
+  },
+
+  // Turbopack configuration
   turbopack: {
     rules: {
       "*.css": {
