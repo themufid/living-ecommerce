@@ -2,10 +2,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Domain subpath deployment
-  basePath: "/living-ecommerce",
-
-  // Image configuration
   images: {
     remotePatterns: [
       {
@@ -16,7 +12,6 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // Turbopack configuration
   turbopack: {
     rules: {
       "*.css": {
