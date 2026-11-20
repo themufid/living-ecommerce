@@ -387,7 +387,7 @@ export function PaymentPanel({ order }: { order: Order }) {
       <p className="font-medium">Instruksi simulasi · {paymentLabel[order.paymentMethod]}</p>
       {order.paymentMethod === "transfer" ? (
         <p className="mt-2">
-          BCA 8801234567 a.n. Atelier Living. Nomor ini tidak terhubung ke bank. Transfer sungguhan tidak akan terbaca.
+          BRI 748801007027535 a.n. Rodhi (Atelier Living).
         </p>
       ) : null}
       {order.paymentMethod === "va" ? (
